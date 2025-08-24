@@ -51,399 +51,525 @@
     </style>
 </head>
 <body class="min-h-screen">
-    <!-- Navigation -->
-    <nav class="navbar glass-card fixed top-0 z-50 w-full">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
-                    </svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#downloads">Downloads</a></li>
-                </ul>
-            </div>
-            <a class="btn btn-ghost normal-case text-xl orbitron text-cyan-400">
-                <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Logo" class="w-8 h-8 rounded-full mr-2">
-                <span class="neon-text">Xtra</span><span class="text-purple-500 neon-purple">Manager Software</span>
-            </a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="#about" class="hover:text-cyan-400 transition-all">About</a></li>
-                <li><a href="#history" class="hover:text-cyan-400 transition-all">History</a></li>
-                <li><a href="#projects" class="hover:text-cyan-400 transition-all">Projects</a></li>
-                <li><a href="#team" class="hover:text-cyan-400 transition-all">Team</a></li>
-                <li><a href="#downloads" class="hover:text-cyan-400 transition-all">Downloads</a></li>
+<!-- Navigation -->
+<nav class="navbar glass-card fixed top-0 z-50 w-full">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+                </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#downloads">Downloads</a></li>
             </ul>
         </div>
-        <!-- GitHub icon removed from navbar -->
-    </nav>
+        <a class="btn btn-ghost normal-case text-xl orbitron text-cyan-400">
+            <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Logo" class="w-8 h-8 rounded-full mr-2">
+            <span class="neon-text">Xtra</span><span class="text-purple-500 neon-purple">Manager Software</span>
+        </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="#about" class="hover:text-cyan-400 transition-all">About</a></li>
+            <li><a href="#history" class="hover:text-cyan-400 transition-all">History</a></li>
+            <li><a href="#projects" class="hover:text-cyan-400 transition-all">Projects</a></li>
+            <li><a href="#team" class="hover:text-cyan-400 transition-all">Team</a></li>
+            <li><a href="#downloads" class="hover:text-cyan-400 transition-all">Downloads</a></li>
+        </ul>
+    </div>
+    <!-- GitHub icon removed from navbar -->
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero min-h-screen flex items-center justify-center hero-gradient">
-        <div class="hero-content text-center">
-            <div class="max-w-lg">
-                <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Xtra Manager Logo" class="w-32 h-32 rounded-full mx-auto mb-4 floating">
-                <h1 class="text-5xl font-bold orbitron neon-text mb-4">Xtra Manager Software</h1>
-                <p class="text-xl text-gray-300 mb-6">Open-Source Programs Innovation Hub</p>
-                <p class="text-gray-400 mb-8">Empowering developers & enthusiasts with cutting-edge Programs since 2025.</p>
-                <div class="flex gap-4 justify-center">
-                    <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Explore Projects</button>
-                    <button class="btn btn-outline btn-primary" onclick="window.open('https://t.me/CH_XtraManagerSoftware','_blank')">Join Community</button>
+<!-- Hero Section -->
+<section class="hero min-h-screen flex items-center justify-center hero-gradient">
+    <div class="hero-content text-center">
+        <div class="max-w-lg">
+            <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Xtra Manager Logo" class="w-32 h-32 rounded-full mx-auto mb-4 floating">
+            <h1 class="text-5xl font-bold orbitron neon-text mb-4">Xtra Manager Software</h1>
+            <p class="text-xl text-gray-300 mb-6">Open-Source Programs Innovation Hub</p>
+            <p class="text-gray-400 mb-8">Empowering developers & enthusiasts with cutting-edge Programs since 2025.</p>
+            <div class="flex gap-4 justify-center">
+                <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Explore Projects</button>
+                <button class="btn btn-outline btn-primary" onclick="window.open('https://t.me/CH_XtraManagerSoftware','_blank')">Join Community</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About & History -->
+<section id="about" class="py-20 px-4">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">About & History</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="gradient-border">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Our Origin Story</h3>
+                    <p class="text-gray-300 mb-4">
+                        <strong>Xtra Manager Software</strong> was officially founded on <span class="text-cyan-400 font-bold">January 16, 2025</span> by Gusti Aditya Muzaky.
+                    </p>
+                    <p class="text-gray-300">
+                        What started as a personal passion project quickly evolved into a collaborative open-source community dedicated to pushing open source programs development boundaries.
+                    </p>
+                </div>
+            </div>
+            <div class="gradient-border">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-500">Our Mission</h3>
+                    <p class="text-gray-300">
+                        We exist to create a thriving ecosystem where <strong>developers, power users, enthusiasts on open source</strong> can collaborate on tools that enhance programs experience. Our focus areas include:
+                    </p>
+                    <ul class="mt-4 text-gray-300 text-sm list-disc list-inside space-y-1">
+                        <li>Kernel optimization & management</li>
+                        <li>System diagnostics & analysis</li>
+                        <li>Linux integration on Android</li>
+                        <li>Network management utilities</li>
+                        <li>ROM development toolkits</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About & History -->
-    <section id="about" class="py-20 px-4">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">About & History</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="gradient-border">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-4 text-cyan-400">Our Origin Story</h3>
-                        <p class="text-gray-300 mb-4">
-                            <strong>Xtra Manager Software</strong> was officially founded on <span class="text-cyan-400 font-bold">January 16, 2025</span> by Gusti Aditya Muzaky.
-                        </p>
-                        <p class="text-gray-300">
-                            What started as a personal passion project quickly evolved into a collaborative open-source community dedicated to pushing open source programs development boundaries.
-                        </p>
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Our Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Xtra Kernel Manager -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Kernel-Manager/master/app/src/main/res/drawable/logo.png" alt="Xtra Kernel Manager" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-cyan-400">Xtra Kernel Manager</h3>
+                    <p class="text-gray-300 text-sm">Kernel Management for rooted Android with Material 3 UI.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Root</div>
+                        <div class="badge badge-outline">Android 10+</div>
+                        <div class="badge badge-outline">Kotlin</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/Xtra-Kernel-Manager" class="btn btn-primary btn-sm">GitHub</a>
+                        <a href="https://www.pling.com/p/2262836/" class="btn btn-outline btn-sm">Download</a>
                     </div>
                 </div>
-                <div class="gradient-border">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-4 text-purple-500">Our Mission</h3>
-                        <p class="text-gray-300">
-                            We exist to create a thriving ecosystem where <strong>developers, power users, enthusiasts on open source</strong> can collaborate on tools that enhance programs experience. Our focus areas include:
-                        </p>
-                        <ul class="mt-4 text-gray-300 text-sm list-disc list-inside space-y-1">
-                            <li>Kernel optimization & management</li>
-                            <li>System diagnostics & analysis</li>
-                            <li>Linux integration on Android</li>
-                            <li>Network management utilities</li>
-                            <li>ROM development toolkits</li>
-                        </ul>
+            </div>
+
+            <!-- Ai On Telegram Bot -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-1">
+                            <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                <!-- Robot AI Icon -->
+                                <svg class="w-12 h-12 text-green-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                    <path d="M12 6c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                                    <path d="M17 12c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1zm-10 0c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1z"/>
+                                    <path d="M12 14c-2.33 0-4.31 1.46-5.11 3.5h10.22c-.8-2.04-2.78-3.5-5.11-3.5z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-green-400">Ai On Telegram Bot</h3>
+                    <p class="text-gray-300 text-sm">Simplified Chat Ai API implementation for use in Telegram Bots.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Chat Ai</div>
+                        <div class="badge badge-outline">API</div>
+                        <div class="badge badge-outline">Linux</div>
+                        <div class="badge badge-outline">WSL</div>
+                        <div class="badge badge-outline">Termux</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/Ai-On-TelegramBot.git" class="btn btn-primary btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Android-Proot-Linux -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-1">
+                            <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-12 h-12 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-green-400">Android-Proot-Linux</h3>
+                    <p class="text-gray-300 text-sm">Full Linux distros with GUI inside Termux & VNC on Android — no root required.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Termux</div>
+                        <div class="badge badge-outline">No Root</div>
+                        <div class="badge badge-outline">Proot</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/Android-Proot-Linux" class="btn btn-primary btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RouterSet -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-gradient-to-r from-orange-500 to-red-600 p-1">
+                            <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-12 h-12 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm1-11h-2v4H7v2h4v4h2v-4h4v-2h-4V8z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-orange-400">RouterSet</h3>
+                    <p class="text-gray-300 text-sm">Flutter router config tool with multi-Indonesian brand support & WebView access.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Flutter</div>
+                        <div class="badge badge-outline">Multi-Brand</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps" class="btn btn-primary btn-sm">GitHub</a>
+                        <a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps/releases/tag/%23router" class="btn btn-outline btn-sm">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xtra Device Check -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-gradient-to-r from-yellow-500 to-red-600 p-1">
+                            <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-yellow-400">Xtra Device Check</h3>
+                    <p class="text-gray-300 text-sm">Shell-based Android diagnostics: bootloader, root, TEE, authenticity & DRM.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Shell</div>
+                        <div class="badge badge-outline">Termux</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/Xtra-Device-Check" class="btn btn-primary btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xtra ROM Toolkit -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 p-1">
+                            <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-12 h-12 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-2V9h2V7h2v2h2v4h-2v4zm-8-2h2v2H6v-2zm0-4h2v2H6v-2zm0-4h2v2H6V7zm6-2h2v2h-2V5z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-indigo-400">Xtra ROM Toolkit</h3>
+                    <p class="text-gray-300 text-sm">Lightweight cross-platform toolkit for unpacking/repacking Android ROM payloads.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">Cross-Platform</div>
+                        <div class="badge badge-outline">ROM Tools</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/Xtra-AndroidROM-Toolkit" class="btn btn-primary btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XtraAether Kernel -->
+            <div class="card glass-card hover:scale-105 transition-transform">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img src="https://images.pling.com/img/00/00/74/12/16/2307188/6086619977793784047.jpg" alt="XtraAether Kernel" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title orbitron text-red-400">XtraAether Kernel</h3>
+                    <p class="text-gray-300 text-sm">OSS Lineage OS kernel for POCO F5 / Redmi Note 12 Turbo with performance tweaks.</p>
+                    <div class="card-actions mt-2">
+                        <div class="badge badge-outline">POCO F5</div>
+                        <div class="badge badge-outline">OSS</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <a href="https://github.com/Gustyx-Power/android_kernel_xiaomi_sm8450" class="btn btn-primary btn-sm">GitHub</a>
+                        <a href="https://www.pling.com/p/2307188/" class="btn btn-outline btn-sm">Download</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Our Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+<!-- Team Section -->
+<section id="team" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Team</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-6 text-center">
+                <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-cyan-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/Gustyx-Power.png" alt="Gusti Aditya Muzaky"></div></div>
+                <h3 class="text-xl font-bold text-cyan-400">Gusti Aditya Muzaky</h3>
+                <p class="text-sm text-gray-400">@Gustyx-Power</p>
+                <p class="text-gray-300 mt-2">Founder & Lead Developer</p>
+                <a href="https://github.com/Gustyx-Power" class="btn btn-ghost btn-xs mt-2">GitHub</a>
+            </div>
+            <div class="glass-card p-6 text-center">
+                <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-purple-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/pavelc4.png" alt="Dimas Dwi Ariyanto"></div></div>
+                <h3 class="text-xl font-bold text-purple-400">Dimas Dwi Ariyanto</h3>
+                <p class="text-sm text-gray-400">@Pavelc</p>
+                <p class="text-gray-300 mt-2">CO-Founder</p>
+                <a href="https://github.com/pavelc4" class="btn btn-ghost btn-xs mt-2">GitHub</a>
+            </div>
+            <div class="glass-card p-6 text-center">
+                <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-green-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/ziyu4.png" alt="Pandu"></div></div>
+                <h3 class="text-xl font-bold text-green-400">Pandu</h3>
+                <p class="text-sm text-gray-400">@Ziyu4</p>
+                <p class="text-gray-300 mt-2">Contributor Development</p>
+                <a href="https://github.com/ziyu4" class="btn btn-ghost btn-xs mt-2">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Downloads Section -->
+<section id="downloads" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Downloads</h2>
+        <div class="overflow-x-auto">
+            <table class="table glass-card">
+                <thead>
+                <tr class="text-cyan-400">
+                    <th>Project</th>
+                    <th>Version</th>
+                    <th>Platform</th>
+                    <th>GitHub</th>
+                    <th>Download</th>
+                </tr>
+                </thead>
+                <tbody>
                 <!-- Xtra Kernel Manager -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full">
-                                <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Kernel-Manager/master/app/src/main/res/drawable/logo.png" alt="Xtra Kernel Manager" class="w-full h-full object-cover">
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full">
+                                    <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Kernel-Manager/master/app/src/main/res/drawable/logo.png" alt="XKM Icon" class="w-full h-full object-cover rounded-full">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold">Xtra Kernel Manager</div>
+                                <div class="text-sm opacity-50">Kernel Manager</div>
                             </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-cyan-400">Xtra Kernel Manager</h3>
-                        <p class="text-gray-300 text-sm">Kernel Management for rooted Android with Material 3 UI.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Root</div>
-                            <div class="badge badge-outline">Android 10+</div>
-                            <div class="badge badge-outline">Kotlin</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/Xtra-Kernel-Manager" class="btn btn-primary btn-sm">GitHub</a>
-                            <a href="https://www.pling.com/p/2262836/" class="btn btn-outline btn-sm">Download</a>
-                        </div>
-                    </div>
-                </div>
-
+                    </td>
+                    <td>v1.3</td>
+                    <td>Android 10+</td>
+                    <td><a href="https://github.com/Gustyx-Power/Xtra-Kernel-Manager" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><a href="https://www.pling.com/p/2262836/" class="btn btn-xs btn-success">Pling.com</a></td>
+                </tr>
                 <!-- Ai On Telegram Bot -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-1">
-                                <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-0.5">
+                                    <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                            <path d="M12 6c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                                            <path d="M17 12c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1zm-10 0c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1z"/>
+                                            <path d="M12 14c-2.33 0-4.31 1.46-5.11 3.5h10.22c-.8-2.04-2.78-3.5-5.11-3.5z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
+                            <div>
+                                <div class="font-bold">AI On TelegramBot</div>
+                                <div class="text-sm opacity-50">Bot ChatAi</div>
+                            </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-green-400">Ai On Telegram Bot</h3>
-                        <p class="text-gray-300 text-sm">Simplified Chat Ai API implementation for use in Telegram Bots.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Chat Ai</div>
-                            <div class="badge badge-outline">API</div>
-                            <div class="badge badge-outline">Linux</div>
-                            <div class="badge badge-outline">WSL</div>
-                            <div class="badge badge-outline">Termux</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/Ai-On-TelegramBot.git" class="btn btn-primary btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
+                    </td>
+                    <td>v1</td>
+                    <td>Telegram Bot</td>
+                    <td><a href="https://github.com/Gustyx-Power/Ai-On-TelegramBot.git" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td></td> <!-- No direct download link mentioned in projects -->
+                </tr>
                 <!-- Android-Proot-Linux -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-1">
-                                <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-blue-600 p-0.5">
+                                    <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
+                            <div>
+                                <div class="font-bold">Android-Proot-Linux</div>
+                                <div class="text-sm opacity-50">Linux on Android</div>
+                            </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-green-400">Android-Proot-Linux</h3>
-                        <p class="text-gray-300 text-sm">Full Linux distros with GUI inside Termux & VNC on Android — no root required.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Termux</div>
-                            <div class="badge badge-outline">No Root</div>
-                            <div class="badge badge-outline">Proot</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/Android-Proot-Linux" class="btn btn-primary btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
+                    </td>
+                    <td>Latest</td>
+                    <td>Termux</td>
+                    <td><a href="https://github.com/Gustyx-Power/Android-Proot-Linux" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
+                </tr>
                 <!-- RouterSet -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full bg-gradient-to-r from-orange-500 to-red-600 p-1">
-                                <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm1-11h-2v4H7v2h4v4h2v-4h4v-2h-4V8z"/>
-                                    </svg>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+                                    <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm1-11h-2v4H7v2h4v4h2v-4h4v-2h-4V8z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
+                            <div>
+                                <div class="font-bold">RouterSet</div>
+                                <div class="text-sm opacity-50">Router Config</div>
+                            </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-orange-400">RouterSet</h3>
-                        <p class="text-gray-300 text-sm">Flutter router config tool with multi-Indonesian brand support & WebView access.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Flutter</div>
-                            <div class="badge badge-outline">Multi-Brand</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps" class="btn btn-primary btn-sm">GitHub</a>
-                            <a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps/releases/tag/%23router" class="btn btn-outline btn-sm">Download</a>
-                        </div>
-                    </div>
-                </div>
-
+                    </td>
+                    <td>Stable</td>
+                    <td>Android</td>
+                    <td><a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps/releases/tag/%23router" class="btn btn-xs btn-success">GitHub</a></td>
+                </tr>
                 <!-- Xtra Device Check -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full bg-gradient-to-r from-yellow-500 to-red-600 p-1">
-                                <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
-                                    </svg>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-yellow-500 to-red-600 p-0.5">
+                                    <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
+                            <div>
+                                <div class="font-bold">Xtra Device Check</div>
+                                <div class="text-sm opacity-50">Diagnostics</div>
+                            </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-yellow-400">Xtra Device Check</h3>
-                        <p class="text-gray-300 text-sm">Shell-based Android diagnostics: bootloader, root, TEE, authenticity & DRM.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Shell</div>
-                            <div class="badge badge-outline">Termux</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/Xtra-Device-Check" class="btn btn-primary btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
+                    </td>
+                    <td>Latest</td>
+                    <td>Android Shell</td>
+                    <td><a href="https://github.com/Gustyx-Power/Xtra-Device-Check" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
+                </tr>
                 <!-- Xtra ROM Toolkit -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 p-1">
-                                <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-2V9h2V7h2v2h2v4h-2v4zm-8-2h2v2H6v-2zm0-4h2v2H6v-2zm0-4h2v2H6V7zm6-2h2v2h-2V5z"/>
-                                    </svg>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 p-0.5">
+                                    <div class="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-2V9h2V7h2v2h2v4h-2v4zm-8-2h2v2H6v-2zm0-4h2v2H6v-2zm0-4h2v2H6V7zm6-2h2v2h-2V5z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-indigo-400">Xtra ROM Toolkit</h3>
-                        <p class="text-gray-300 text-sm">Lightweight cross-platform toolkit for unpacking/repacking Android ROM payloads.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">Cross-Platform</div>
-                            <div class="badge badge-outline">ROM Tools</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/Xtra-AndroidROM-Toolkit" class="btn btn-primary btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- XtraAether Kernel -->
-                <div class="card glass-card hover:scale-105 transition-transform">
-                    <figure class="px-10 pt-10">
-                        <div class="avatar">
-                            <div class="w-24 rounded-full">
-                                <img src="https://images.pling.com/img/00/00/74/12/16/2307188/6086619977793784047.jpg" alt="XtraAether Kernel" class="w-full h-full object-cover">
+                            <div>
+                                <div class="font-bold">Xtra ROM Toolkit</div>
+                                <div class="text-sm opacity-50">ROM Tools</div>
                             </div>
                         </div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h3 class="card-title orbitron text-red-400">XtraAether Kernel</h3>
-                        <p class="text-gray-300 text-sm">OSS Lineage OS kernel for POCO F5 / Redmi Note 12 Turbo with performance tweaks.</p>
-                        <div class="card-actions mt-2">
-                            <div class="badge badge-outline">POCO F5</div>
-                            <div class="badge badge-outline">OSS</div>
+                    </td>
+                    <td>Latest</td>
+                    <td>Cross-Platform</td>
+                    <td><a href="https://github.com/Gustyx-Power/Xtra-AndroidROM-Toolkit" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
+                </tr>
+                <!-- XtraAether Kernel -->
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar">
+                                <div class="w-8 h-8 rounded-full">
+                                    <img src="https://images.pling.com/img/00/00/74/12/16/2307188/6086619977793784047.jpg" alt="XtraAether Kernel Icon" class="w-full h-full object-cover rounded-full">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold">XtraAether Kernel</div>
+                                <div class="text-sm opacity-50">Custom Kernel</div>
+                            </div>
                         </div>
-                        <div class="card-actions justify-end mt-4">
-                            <a href="https://github.com/Gustyx-Power/android_kernel_xiaomi_sm8450" class="btn btn-primary btn-sm">GitHub</a>
-                            <a href="https://www.pling.com/p/2307188/" class="btn btn-outline btn-sm">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                    <td>Latest</td>
+                    <td>POCO F5 / RN12T</td>
+                    <td><a href="https://github.com/Gustyx-Power/android_kernel_xiaomi_sm8450" class="btn btn-xs btn-primary">GitHub</a></td>
+                    <td><a href="https://www.pling.com/p/2307188/" class="btn btn-xs btn-success">Pling.com</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Team Section -->
-    <section id="team" class="py-20 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Team</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-6 text-center">
-                    <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-cyan-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/Gustyx-Power.png" alt="Gusti Aditya Muzaky"></div></div>
-                    <h3 class="text-xl font-bold text-cyan-400">Gusti Aditya Muzaky</h3>
-                    <p class="text-sm text-gray-400">@Gustyx-Power</p>
-                    <p class="text-gray-300 mt-2">Founder & Lead Developer</p>
-                    <a href="https://github.com/Gustyx-Power" class="btn btn-ghost btn-xs mt-2">GitHub</a>
-                </div>
-                <div class="glass-card p-6 text-center">
-                    <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-purple-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/pavelc4.png" alt="Dimas Dwi Ariyanto"></div></div>
-                    <h3 class="text-xl font-bold text-purple-400">Dimas Dwi Ariyanto</h3>
-                    <p class="text-sm text-gray-400">@Pavelc</p>
-                    <p class="text-gray-300 mt-2">CO-Founder</p>
-                    <a href="https://github.com/pavelc4" class="btn btn-ghost btn-xs mt-2">GitHub</a>
-                </div>
-                <div class="glass-card p-6 text-center">
-                    <div class="avatar mb-4"><div class="w-24 rounded-full ring ring-green-400 ring-offset-base-100 ring-offset-2"><img src="https://github.com/ziyu4.png" alt="Pandu"></div></div>
-                    <h3 class="text-xl font-bold text-green-400">Pandu</h3>
-                    <p class="text-sm text-gray-400">@Ziyu4</p>
-                    <p class="text-gray-300 mt-2">Contributor Development</p>
-                    <a href="https://github.com/ziyu4" class="btn btn-ghost btn-xs mt-2">GitHub</a>
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="footer footer-center p-10 glass-card">
+    <div>
+        <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Logo" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <div class="grid grid-flow-col gap-4">
+            <a class="link link-hover hover:text-cyan-400" href="#about">About</a>
+            <a class="link link-hover hover:text-cyan-400" href="#history">History</a>
+            <a class="link link-hover hover:text-cyan-400" href="#projects">Projects</a>
+            <a class="link link-hover hover:text-cyan-400" href="#team">Team</a>
+            <a class="link link-hover hover:text-cyan-400" href="#downloads">Downloads</a>
         </div>
-    </section>
+    </div>
+    <div class="text-gray-400">
+        <p>© 2025 Xtra Manager Software — all projects open-source under MIT / GPL licenses</p>
+        <p>Founded January 16, 2025 | Empowering Open Source programs innovation worldwide</p>
+    </div>
+</footer>
 
-    <!-- Downloads Section -->
-    <section id="downloads" class="py-20 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold text-center mb-12 orbitron neon-text">Downloads</h2>
-            <div class="overflow-x-auto">
-                <table class="table glass-card">
-                    <thead>
-                        <tr class="text-cyan-400">
-                            <th>Project</th>
-                            <th>Version</th>
-                            <th>Platform</th>
-                            <th>GitHub</th>
-                            <th>Download</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-cyan-500"><span class="text-xs font-bold text-white">XKM</span></div></div><div><div class="font-bold">Xtra Kernel Manager</div><div class="text-sm opacity-50">Kernel Manager</div></div></div></td>
-                            <td>v1.3</td><td>Android 10+</td>
-                            <td><a href="https://github.com/Gustyx-Power/Xtra-Kernel-Manager" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><a href="https://www.pling.com/p/2262836/" class="btn btn-xs btn-success">Pling.com</a></td>
-                        </tr>
-                         <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-cyan-500"><span class="text-xs font-bold text-white">AI-TG</span></div></div><div><div class="font-bold">AI On TelegramBot</div><div class="text-sm opacity-50">Bot ChatAi</div></div></div></td>
-                            <td>v1.3</td><td>Telegram Bot</td>
-                            <td><a href="https://github.com/Gustyx-Power/Ai-On-TelegramBot.git" class="btn btn-xs btn-primary">GitHub</a></td>
-                        </tr>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-green-500"><span class="text-xs font-bold text-white">🐧</span></div></div><div><div class="font-bold">Android-Proot-Linux</div><div class="text-sm opacity-50">Linux on Android</div></div></div></td>
-                            <td>Latest</td><td>Termux</td>
-                            <td><a href="https://github.com/Gustyx-Power/Android-Proot-Linux" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
-                        </tr>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-orange-500"><span class="text-xs font-bold text-white">📡</span></div></div><div><div class="font-bold">RouterSet</div><div class="text-sm opacity-50">Router Config</div></div></div></td>
-                            <td>Stable</td><td>Android</td>
-                            <td><a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><a href="https://github.com/Gustyx-Power/RouterSet-Mobile-Apps/releases/tag/%23router" class="btn btn-xs btn-success">GitHub</a></td>
-                        </tr>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-yellow-500"><span class="text-xs font-bold text-white">🔍</span></div></div><div><div class="font-bold">Xtra Device Check</div><div class="text-sm opacity-50">Diagnostics</div></div></div></td>
-                            <td>Latest</td><td>Android Shell</td>
-                            <td><a href="https://github.com/Gustyx-Power/Xtra-Device-Check" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
-                        </tr>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-indigo-500"><span class="text-xs font-bold text-white">📦</span></div></div><div><div class="font-bold">Xtra ROM Toolkit</div><div class="text-sm opacity-50">ROM Tools</div></div></div></td>
-                            <td>Latest</td><td>Cross-Platform</td>
-                            <td><a href="https://github.com/Gustyx-Power/Xtra-AndroidROM-Toolkit" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><span class="badge badge-ghost badge-sm">Source Only</span></td>
-                        </tr>
-                        <tr>
-                            <td><div class="flex items-center gap-3"><div class="avatar"><div class="w-8 rounded-full bg-red-500"><span class="text-xs font-bold text-white">⚡</span></div></div><div><div class="font-bold">XtraAether Kernel</div><div class="text-sm opacity-50">Custom Kernel</div></div></div></td>
-                            <td>Latest</td><td>POCO F5 / RN12T</td>
-                            <td><a href="https://github.com/Gustyx-Power/android_kernel_xiaomi_sm8450" class="btn btn-xs btn-primary">GitHub</a></td>
-                            <td><a href="https://www.pling.com/p/2307188/" class="btn btn-xs btn-success">Pling.com</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer footer-center p-10 glass-card">
-        <div>
-            <img src="https://raw.githubusercontent.com/Gustyx-Power/Xtra-Manager-Software-Website/main/logo.jpg" alt="Logo" class="w-16 h-16 rounded-full mx-auto mb-4">
-            <div class="grid grid-flow-col gap-4">
-                <a class="link link-hover hover:text-cyan-400" href="#about">About</a>
-                <a class="link link-hover hover:text-cyan-400" href="#history">History</a>
-                <a class="link link-hover hover:text-cyan-400" href="#projects">Projects</a>
-                <a class="link link-hover hover:text-cyan-400" href="#team">Team</a>
-                <a class="link link-hover hover:text-cyan-400" href="#downloads">Downloads</a>
-            </div>
-        </div>
-        <div class="text-gray-400">
-            <p>© 2025 Xtra Manager Software — all projects open-source under MIT / GPL licenses</p>
-            <p>Founded January 16, 2025 | Empowering Open Source programs innovation worldwide</p>
-        </div>
-    </footer>
-
-    <script>
-        // smooth scroll & navbar fade
-        document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
-            e.preventDefault(); document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth',block:'start'});
-        }));
-        window.addEventListener('scroll',()=>document.querySelector('.navbar').classList.toggle('bg-opacity-90',window.scrollY>50));
-    </script>
+<script>
+    // smooth scroll & navbar fade
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+        e.preventDefault(); document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth',block:'start'});
+    }));
+    window.addEventListener('scroll',()=>document.querySelector('.navbar').classList.toggle('bg-opacity-90',window.scrollY>50));
+</script>
 </body>
 </html>
